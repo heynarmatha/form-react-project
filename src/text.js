@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import Number from './components/number';
+// import Form from './components/Form';
 
 const App = ()=> {
   console.log("Rendering Start");
@@ -9,16 +9,16 @@ const App = ()=> {
 
       <h1>React</h1>
 
-      <Number currentCount = {count} name="john" value={10}/>
+      <p>User : {count}</p>
 
       <button onClick={()=>{
         console.log("plus");      
-        setCount((count || 0) +1) 
+        setCount(count+1) 
       }}>Increment</button>
 
       <button onClick={()=>{
         console.log("minus");
-        setCount((count || 0) -1)        
+        setCount(count-1)        
       }}>Decrement</button>
 
     </div>
